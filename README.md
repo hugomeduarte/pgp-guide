@@ -365,7 +365,7 @@ print('Cifrado com sucesso?', encrypted.ok)
 
 ## Tarefa Final Sugerida
 
-> Redigir um pequeno texto (máximo: 1 página) descrevendo um cenário profissional ou académico em que o uso de PGP seja considerado útil. O texto deve incluir:
+> Redigir um pequeno texto (3 a 5 linhas) descrevendo um cenário profissional ou académico em que o uso de PGP seja considerado útil. O texto deve incluir:
 >
 > - Um benefício concreto
 > - Uma limitação ou dificuldade
