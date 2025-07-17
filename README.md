@@ -178,8 +178,15 @@ Se o ficheiro não tiver sido alterado, a assinatura será considerada válida.
 Uma vez criada a chave, é o momento de proceder a uma experiência prática com outra pessoa. Recomenda-se a colaboração com um colega (ou, em alternativa, a utilização de dois terminais distintos) para a realização dos passos seguintes.
 
 ### 1. Exportar a chave pública
+
+Windows:
 ```bash
 gpg --export --armor alice@tecnico.ulisboa.pt | Out-File -Encoding ascii -FilePath chave_publica.asc
+```
+
+Linux/MacOS:
+```bash
+gpg --export --armor alice@tecnico.ulisboa.pt > chave_publica.asc
 ```
 
 Explicação:
