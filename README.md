@@ -179,11 +179,11 @@ Uma vez criada a chave, é o momento de proceder a uma experiência prática com
 
 ### 1. Exportar a chave pública
 ```bash
-gpg --export --armor alice@tecnico.ulisboa.pt > chave_publica.asc
+gpg --export --armor alice@tecnico.ulisboa.pt | Out-File -Encoding ascii -FilePath chave_publica.asc
 ```
 
 Explicação:
-- Cria-se um ficheiro `chave_publica.asc` com a chave pública, em formato de texto.
+- Cria-se um ficheiro `chave_publica.asc` com a chave pública, em formato de texto, codificado com ASCII, em vez de UTF-16, que é o padrão da powershell. (IMPORTANTE para o --import seguinte)
 - Este ficheiro é seguro para partilhar — pode ser entregue ao colega.
 
 ### 2. Importar a chave pública de outra pessoa
